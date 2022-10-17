@@ -17,7 +17,17 @@ import Navbar from "./components/Navbar/Navbar"
 function App() {
   return (
     <div className="main-app-container">
-      Hello
+      <Header />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='about' element={<About/>} />
+        <Route path='recipes' element={<Recipes/>} />
+        <Route path='favorites' element={<Favorites/>} />
+        <Route path='blog' element={<Blog/>} />
+        <Route path='contact' element={<Contact/>} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
