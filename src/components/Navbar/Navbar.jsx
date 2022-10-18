@@ -1,10 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import "./Navbar.css"
 
-const Navbar = () => {
+const Navbar = ({ links }) => {
   return (
-    <div>Navbar</div>
+    <div className='navbar-container'>
+      {links.map((item) => {
+        return(
+          <Link to={item.linkTo}>
+            {item.linkName}
+          </Link>
+        )
+      })
+      }
+    </div>
   )
 }
 

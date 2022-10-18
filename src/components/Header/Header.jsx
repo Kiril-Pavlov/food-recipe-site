@@ -1,10 +1,13 @@
 import React from 'react'
 
 import "./Header.css"
+import Navbar from '../Navbar/Navbar'
 
-const Header = () => {
+const Header = ({links}) => {
   return (
-    <div>Header</div>
+    <div>
+      <Navbar links={links}/>
+    </div>
   )
 }
 

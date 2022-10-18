@@ -12,13 +12,20 @@ import Contact from "./pages/Contact/Contact"
 //components
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
-import Navbar from "./components/Navbar/Navbar"
 
 function App() {
+  let links = [
+    {linkName:"Home",linkTo:"/"},
+    {linkName:"About",linkTo:"about"},
+    {linkName:"Recipes",linkTo:"recipes"},
+    {linkName:"Favorites",linkTo:"favorites"},
+    {linkName:"Blog",linkTo:"blog"},
+    {linkName:"Contact",linkTo:"contact"},
+  ]
+
   return (
     <div className="main-app-container">
-      <Header />
-      <Navbar />
+      <Header links={links}/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='about' element={<About/>} />
@@ -27,7 +34,7 @@ function App() {
         <Route path='blog' element={<Blog/>} />
         <Route path='contact' element={<Contact/>} />
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
