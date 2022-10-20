@@ -5,7 +5,10 @@ import Navbar from '../Navbar/Navbar'
 
 const Header = ({links}) => {
   return (
-    <div>
+    <div className='header-container'>
+      <div className='header-logo'>
+        LOGO
+      </div>
       <Navbar links={links}/>
     </div>
   )
