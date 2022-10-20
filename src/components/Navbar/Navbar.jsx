@@ -8,7 +8,7 @@ const Navbar = ({ links }) => {
     <div className='navbar-container'>
       {links.map((item) => {
         return(
-          <Link to={item.linkTo}>
+          <Link to={item.linkTo} className="navbar-link">
             {item.linkName}
           </Link>
         )

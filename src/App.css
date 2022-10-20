@@ -4,8 +4,8 @@
   margin: 0px;
 }
 
-.root{
-  --primary-color:#00FF00;
+:root{
+  --primary-color:#2a7e2a;
 }
 
 body{
