@@ -1,0 +1,9 @@
+.test-container{
+    height: 200px;
+    width: auto;
+    background-color: aqua;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

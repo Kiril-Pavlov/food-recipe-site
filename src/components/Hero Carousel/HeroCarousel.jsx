@@ -14,7 +14,7 @@ const HeroCarousel = () => {
     const responsive = {
         0: { items: 1 },
         568: { items: 2 },
-        1024: { items: 4 },
+        1024: { items: 3 },
     };
 
 const items = [
@@ -25,7 +25,7 @@ const items = [
 ];
   return (
     <div>
-        <AliceCarousel mouseTracking items={items} responsive={responsive}/>
+        <AliceCarousel mouseTracking items={items} responsive={responsive} infinite/>
     </div>
   )
 }
