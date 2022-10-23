@@ -9,5 +9,25 @@
 
 .header-logo{
     font-size: 2rem;
-    padding: 5px 30px;
+    padding: 5px 0px;
+}
+
+.navbar-component{
+    display: block;
+}
+
+.navbar-hamburger-button{
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    .navbar-component{
+        display: none;
+    }
+
+    .navbar-hamburger-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
