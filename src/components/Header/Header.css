@@ -37,6 +37,7 @@
 
     .header-link-list{
         display: flex;
+        flex-direction: column;
         position: fixed;
         height: 100vh;
         width: 75%;
@@ -49,5 +50,27 @@
 
     .active{
         left: 0%;
+    }
+
+    .hamburger-close-btn{
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hamburger-link{
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-weight: 700;
+        border-bottom: 2px solid white;
+        border-radius: 0px 0px 20px 0px;
+        transition: all.5s;
+    }
+
+    .hamburger-link:hover{
+        color: white;
     }
 }
