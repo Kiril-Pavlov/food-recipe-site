@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import "./Header.css"
 import Navbar from '../Navbar/Navbar'
@@ -26,6 +27,15 @@ const Header = ({ links }) => {
         ) : (
           <GiHamburgerMenu size={25} onClick={handleHamburgerOpened}/>
         )}
+      </div>
+      <div className={isHamburgerOpened === false ? "header-link-list" : "header-link-list active"}>
+          {links.map((item)=>{
+            return(
+              <Link to={item.linkTo} className="hamburger-link">
+            {item.linkName}
+          </Link>
+            )
+          })}
       </div>
     </div>
   )
